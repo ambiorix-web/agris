@@ -2,12 +2,12 @@
 % Please edit documentation in R/agris.R
 \name{use_agris}
 \alias{use_agris}
-\title{All Agris Middlewares}
+\title{Agris Middlewares}
 \usage{
 use_agris()
 }
 \description{
-All Agris Middlewares
+Uses all agris middlewares.
 }
 \section{Middlewares}{
 
@@ -16,6 +16,7 @@ All Agris Middlewares
 \item \code{\link[=use_cross_origin_embedder_policy]{use_cross_origin_embedder_policy()}}
 \item \code{\link[=use_cross_origin_opener_policy]{use_cross_origin_opener_policy()}}
 \item \code{\link[=use_cross_origin_resource_policy]{use_cross_origin_resource_policy()}}
+\item \code{\link[=use_dns_prefetch_control]{use_dns_prefetch_control()}}
 }
 }
 
