@@ -1,10 +1,14 @@
-#' Use Nonce
+#' Use Content Security Policy
 #' 
-#' Use [nonce](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce)
+#' Adds relevant Content Security Policy headers.
+#' 
+#' @section Changes:
+#' 
+#' - Adds [nonce](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce)
 #' to make each request unique.
 #' 
 #' @export 
-use_nonce <- function() {
+use_content_security_policy <- function() {
   \(req, res) {
     nonce <- random_bytes()
     policy <- sprintf(

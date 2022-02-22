@@ -7,8 +7,12 @@
 use_agris()
 }
 \description{
-Middlewares:
+All Agris Middlewares
+}
+\section{Middlewares}{
+
 \itemize{
-\item Nonce - \code{\link[=use_nonce]{use_nonce()}}
+\item Nonce - \code{\link[=use_content_security_policy]{use_content_security_policy()}}
 }
 }
+
