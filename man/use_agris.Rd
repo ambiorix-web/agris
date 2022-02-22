@@ -15,6 +15,7 @@ All Agris Middlewares
 \item \code{\link[=use_content_security_policy]{use_content_security_policy()}}
 \item \code{\link[=use_cross_origin_embedder_policy]{use_cross_origin_embedder_policy()}}
 \item \code{\link[=use_cross_origin_opener_policy]{use_cross_origin_opener_policy()}}
+\item \code{\link[=use_cross_origin_resource_policy]{use_cross_origin_resource_policy()}}
 }
 }
 
