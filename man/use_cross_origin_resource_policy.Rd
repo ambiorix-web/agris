@@ -4,7 +4,12 @@
 \alias{use_cross_origin_resource_policy}
 \title{Cross Origin Resource Policy}
 \usage{
-use_cross_origin_resource_policy()
+use_cross_origin_resource_policy(
+  policy = c("same-origin", "same-site", "cross-origin")
+)
+}
+\arguments{
+\item{policy}{Policy to set.}
 }
 \description{
 Sets the \code{Cross-Origin-Resource-Policy} to \code{same-origin}.

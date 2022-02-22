@@ -2,12 +2,22 @@
 #' 
 #' Sets the `Cross-Origin-Resource-Policy` to `same-origin`.
 #' 
+#' @param policy Policy to set.
+#' 
 #' @export 
-use_cross_origin_resource_policy <- function() {
+use_cross_origin_resource_policy <- function(
+  policy = c(
+    "same-origin",
+    "same-site",
+    "cross-origin"
+  )
+) {
+  policy <- match.arg(policy)
+
   \(req, res) {
     req$headers(
       "Cross-Origin-Resource-Policy",
-      "same-origin"
+      policy
     )
   }
 }
