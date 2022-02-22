@@ -12,6 +12,8 @@
 #' - [use_hide_powered_by()]
 #' - [use_content_type_options()]
 #' - [use_xss_protection()]
+#' - [use_download_options()]
+#' - [use_strict_transport_security()]
 #' 
 #' @export 
 use_agris <- function() {
@@ -25,6 +27,7 @@ use_agris <- function() {
     use_hide_powered_by(),
     use_content_type_options(),
     use_xss_protection(),
-    use_download_options()
+    use_download_options(),
+    use_strict_transport_security()
   )
 }

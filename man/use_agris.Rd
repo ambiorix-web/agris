@@ -21,6 +21,8 @@ Uses all agris middlewares.
 \item \code{\link[=use_hide_powered_by]{use_hide_powered_by()}}
 \item \code{\link[=use_content_type_options]{use_content_type_options()}}
 \item \code{\link[=use_xss_protection]{use_xss_protection()}}
+\item \code{\link[=use_download_options]{use_download_options()}}
+\item \code{\link[=use_strict_transport_security]{use_strict_transport_security()}}
 }
 }
 

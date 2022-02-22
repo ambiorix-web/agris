@@ -28,7 +28,8 @@ The package includes the following middlewares.
 - `use_hide_powered_by()`
 - `use_content_type_options()`
 - `use_xss_protection()`
-- `ùse_download_options()`
+- `use_download_options()`
+- use_strict_transport_security()
 
 Call `use_agris()` to use all of them.
 
