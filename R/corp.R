@@ -1,6 +1,6 @@
 #' Cross Origin Resource Policy
 #' 
-#' Sets the `Cross-Origin-Resource-Policy` to `same-origin`.
+#' Sets the `Cross-Origin-Resource-Policy` to `same-origin` (default).
 #' 
 #' @param policy Policy to set.
 #' 

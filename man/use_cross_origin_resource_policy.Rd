@@ -12,5 +12,5 @@ use_cross_origin_resource_policy(
 \item{policy}{Policy to set.}
 }
 \description{
-Sets the \code{Cross-Origin-Resource-Policy} to \code{same-origin}.
+Sets the \code{Cross-Origin-Resource-Policy} to \code{same-origin} (default).
 }

@@ -4,10 +4,13 @@
 \alias{use_cross_origin_embedder_policy}
 \title{Cross Origin Embedder Policy}
 \usage{
-use_cross_origin_embedder_policy()
+use_cross_origin_embedder_policy(policy = c("require-corp", "unsafe-none"))
+}
+\arguments{
+\item{policy}{Policy to set.}
 }
 \description{
-Sets the \code{Cross-Origin-Embedder-Policy} to \code{require-corp},
+Sets the \code{Cross-Origin-Embedder-Policy} to \code{require-corp} (default),
 so the document can only load resources from the same origin,
 or resources explicitly marked as loadable from another origin.
 }
