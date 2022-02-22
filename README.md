@@ -29,13 +29,13 @@ The package includes the following middlewares.
 - `use_content_type_options()`
 - `use_xss_protection()`
 - `use_download_options()`
-- use_strict_transport_security()
+- `use_strict_transport_security()`
 
-Call `use_agris()` to use all of them.
+Call `agris()` to use all of them.
 
 ## Example
 
-Simply use the `use_agris` function to use all security middlewares.
+Simply use the `agris` function to use all security middlewares.
 
 ``` r
 library(agris)
@@ -43,7 +43,7 @@ library(ambiorix)
 
 app <- Ambiorix$new()
 
-app$use(use_agris())
+app$use(agris())
 
 app$get("/", \(req, res){
   res$send("Using {ambiorix}!")

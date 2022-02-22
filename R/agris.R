@@ -16,7 +16,7 @@
 #' - [use_strict_transport_security()]
 #' 
 #' @export 
-use_agris <- function() {
+agris <- function() {
   list(
     use_content_security_policy(),
     use_cross_origin_embedder_policy(),
