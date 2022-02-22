@@ -7,13 +7,20 @@
 use_content_security_policy()
 }
 \description{
-Adds relevant Content Security Policy headers.
+Adds relevant Content-Security-Policy headers.
 }
-\section{Changes}{
+\section{Directives}{
 
 \itemize{
-\item Adds \href{https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce}{nonce}
-to make each request unique.
+\item base-uri 'self';
+\item block-all-mixed-content;
+\item font-src 'self' https: data:;
+\item form-action 'self';
+\item frame-ancestors 'self';
+\item img-src 'self' data:;
+\item object-src 'none';
+\item style-src 'self' https: 'unsafe-inline';
+\item upgrade-insecure-requests
 }
 }
 

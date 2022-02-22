@@ -1,41 +1,40 @@
 #' Use Content Security Policy
 #' 
-#' Adds relevant Content Security Policy headers.
+#' Adds relevant Content-Security-Policy headers.
 #' 
-#' @section Changes:
+#' @section Directives:
 #' 
-#' - Adds [nonce](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce)
-#' to make each request unique.
-#' 
-#' @importFrom ambiorix token_create
+#' - base-uri 'self';
+#' - block-all-mixed-content;
+#' - font-src 'self' https: data:;
+#' - form-action 'self';
+#' - frame-ancestors 'self';
+#' - img-src 'self' data:;
+#' - object-src 'none';
+#' - style-src 'self' https: 'unsafe-inline';
+#' - upgrade-insecure-requests
 #' 
 #' @export 
 use_content_security_policy <- function() {
   \(req, res) {
-    nonce <- token_create()
-    policy <- sprintf(
-      "script-src 'nonce-%s'",
-      nonce
-    )
-    res$set("nonce", nonce)
     res$header(
-      "Content-Security-Policy", nonce
+      "Content-Security-Policy",
+      default_csr()
     )
-    res$pre_render_hook(none_pre_hook)
   }
 }
 
-#' @keywords internal
-#' @importFrom ambiorix pre_hook
-none_pre_hook <- function(self, content, data, ext) {
-  if(ext != "html")
-    return(pre_hook(content, data))
-
-  replacement <- sprintf(
-    "<script nonce='%s'",
-    self$get("nonce")
+default_csr <- function() {
+  paste(
+    "base-uri 'self'",
+    "block-all-mixed-content",
+    "font-src 'self' https: data:",
+    "form-action 'self'",
+    "frame-ancestors 'self'",
+    "img-src 'self' data:",
+    "object-src 'none'",
+    "style-src 'self' https: 'unsafe-inline'",
+    "upgrade-insecure-requests",
+    sep = "; "
   )
-  content <- gsub("<script", replacement, content)
-  pre_hook(content, data)
 }
-

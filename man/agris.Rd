@@ -24,6 +24,7 @@ Uses all agris middlewares.
 \item \code{\link[=use_download_options]{use_download_options()}}
 \item \code{\link[=use_strict_transport_security]{use_strict_transport_security()}}
 \item \code{\link[=use_origin_agent_cluster]{use_origin_agent_cluster()}}
+\item \code{\link[=use_permitted_cross_domain_policies]{use_permitted_cross_domain_policies()}}
 }
 }
 

@@ -31,6 +31,7 @@ The package includes the following middlewares.
 - `use_download_options()`
 - `use_strict_transport_security()`
 - `use_origin_agent_cluster()`
+- `use_permitted_cross_domain_policies()`
 
 Call `agris()` to use all of them.
 
