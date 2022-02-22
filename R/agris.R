@@ -1,9 +1,11 @@
 #' All Agris Middlewares
 #' 
 #' @section Middlewares:
-#' - Nonce - [use_content_security_policy()]
+#' - [use_content_security_policy()]
+#' - [use_cross_origin_embedder_policy()]
 #' 
 #' @export 
 use_agris <- function() {
   use_content_security_policy()
+  use_cross_origin_embedder_policy()
 }

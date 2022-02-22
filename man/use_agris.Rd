@@ -12,7 +12,8 @@ All Agris Middlewares
 \section{Middlewares}{
 
 \itemize{
-\item Nonce - \code{\link[=use_content_security_policy]{use_content_security_policy()}}
+\item \code{\link[=use_content_security_policy]{use_content_security_policy()}}
+\item \code{\link[=use_cross_origin_embedder_policy]{use_cross_origin_embedder_policy()}}
 }
 }
 
