@@ -11,8 +11,8 @@ You can install the development version of agris from
 [GitHub](https://github.com/devOpifex/agris) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("devOpifex/agris")
+# install.packages("remotes")
+remotes::install_github("devOpifex/agris")
 ```
 
 ## Middlewares
