@@ -6,7 +6,7 @@ here::i_am(".here")
 
 app <- Ambiorix$new()
 
-app$use(use_content_security_policy())
+app$use(use_agris())
 
 app$static(here::here("assets"), "assets")
 

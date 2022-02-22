@@ -3,4 +3,5 @@
 export(use_agris)
 export(use_content_security_policy)
 export(use_cross_origin_embedder_policy)
+export(use_cross_origin_opener_policy)
 importFrom(ambiorix,pre_hook)

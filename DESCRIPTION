@@ -11,5 +11,6 @@ License: GPL (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Depends: R (>= 4.1.0)
 Imports:
     ambiorix (>= 1.0.2)
