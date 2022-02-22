@@ -4,9 +4,14 @@
 \alias{use_cross_origin_opener_policy}
 \title{Cross Origin Opener Policy}
 \usage{
-use_cross_origin_opener_policy()
+use_cross_origin_opener_policy(
+  policy = c("same-origin", "same-origin-allow-popups", "unsafe-nonce")
+)
+}
+\arguments{
+\item{policy}{Policy to set.}
 }
 \description{
 Sets the \code{Cross-Origin-Opener-Policy} to
-\code{same-origin-allow-popups}.
+\code{same-origin} (default).
 }
