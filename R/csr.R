@@ -7,10 +7,12 @@
 #' - Adds [nonce](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/nonce)
 #' to make each request unique.
 #' 
+#' @importFrom ambiorix token_create
+#' 
 #' @export 
 use_content_security_policy <- function() {
   \(req, res) {
-    nonce <- random_bytes()
+    nonce <- token_create()
     policy <- sprintf(
       "script-src 'nonce-%s'",
       nonce
@@ -37,22 +39,3 @@ none_pre_hook <- function(self, content, data, ext) {
   pre_hook(content, data)
 }
 
-#' Random Bytes
-#' 
-#' Create a nonce.
-#' 
-#' @param n Number of bytes.
-#' 
-#' @keywords internal
-random_bytes <- function(n = 16L) {
-  paste(
-    as.hexmode(
-      sample(
-        256,
-        n,
-        replace = TRUE
-      )
-    ),
-    collapse = ""
-  )
-}
