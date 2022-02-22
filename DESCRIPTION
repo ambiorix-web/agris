@@ -1,0 +1,15 @@
+Package: agris
+Title: Security for 'Ambiorix' Applications
+Version: 0.0.1.9000
+Authors@R: 
+    c(
+        person("John", "Coene", , "john@opifex.org", role = c("aut", "cre")),
+        person(family = "Opifex", role = c("fnd", "cph"))
+    ) 
+Description: Security middlewares for "Ambiorix" applications.
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+    ambiorix (>= 1.0.2)
