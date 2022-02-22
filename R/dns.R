@@ -14,7 +14,7 @@ use_dns_prefetch_control <- function(
   policy <- match.arg(policy)
 
   \(req, res) {
-    req$header(
+    res$header(
       "X-DNS-Prefetch-Control",
       policy
     )

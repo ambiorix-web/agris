@@ -16,7 +16,7 @@ use_cross_origin_opener_policy <- function(
   policy <- match.arg(policy)
 
   \(req, res) {
-    req$header(
+    res$header(
       "Cross-Origin-Opener-Policy",
       policy
     )

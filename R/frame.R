@@ -14,7 +14,7 @@ use_frame_options <- function(
   policy <- policy[1]
 
   \(req, res) {
-    req$header(
+    res$header(
       "X-Frame-Options",
       policy
     )

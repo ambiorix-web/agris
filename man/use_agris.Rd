@@ -19,6 +19,7 @@ Uses all agris middlewares.
 \item \code{\link[=use_dns_prefetch_control]{use_dns_prefetch_control()}}
 \item \code{\link[=use_frame_options]{use_frame_options()}}
 \item \code{\link[=use_hide_powered_by]{use_hide_powered_by()}}
+\item \code{\link[=use_content_type_options]{use_content_type_options()}}
 }
 }
 

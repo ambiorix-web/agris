@@ -8,10 +8,10 @@
 #' 
 #' @export 
 use_hide_powered_by <- function(
-  value = NULL
+  value = NA
 ) {
   \(req, res) {
-    req$header(
+    res$header(
       "X-Powered-By",
       value
     )

@@ -15,7 +15,7 @@ use_cross_origin_resource_policy <- function(
   policy <- match.arg(policy)
 
   \(req, res) {
-    req$headers(
+    res$header(
       "Cross-Origin-Resource-Policy",
       policy
     )

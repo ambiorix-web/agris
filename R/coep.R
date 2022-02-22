@@ -16,7 +16,7 @@ use_cross_origin_embedder_policy <- function(
   policy <- match.arg(policy)
 
   \(req, res) {
-    req$header(
+    res$header(
       "Cross-Origin-Embedder-Policy",
       policy
     )
