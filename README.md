@@ -29,7 +29,7 @@ The package includes the following middlewares.
 - `use_content_type_options()`
 - `use_xss_protection()`
 
-Call `use_agris` to use all of them.
+Call `use_agris()` to use all of them.
 
 ## Example
 
