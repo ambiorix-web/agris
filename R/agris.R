@@ -24,6 +24,7 @@ use_agris <- function() {
     use_frame_options(),
     use_hide_powered_by(),
     use_content_type_options(),
-    use_xss_protection()
+    use_xss_protection(),
+    use_download_options()
   )
 }
