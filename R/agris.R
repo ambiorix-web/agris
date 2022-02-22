@@ -14,6 +14,7 @@
 #' - [use_xss_protection()]
 #' - [use_download_options()]
 #' - [use_strict_transport_security()]
+#' - [use_origin_agent_cluster()]
 #' 
 #' @export 
 agris <- function() {
@@ -28,6 +29,7 @@ agris <- function() {
     use_content_type_options(),
     use_xss_protection(),
     use_download_options(),
-    use_strict_transport_security()
+    use_strict_transport_security(),
+    use_origin_agent_cluster()
   )
 }
