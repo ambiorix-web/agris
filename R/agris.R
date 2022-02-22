@@ -22,6 +22,7 @@ use_agris <- function() {
     use_dns_prefetch_control(),
     use_frame_options(),
     use_hide_powered_by(),
-    use_content_type_options()
+    use_content_type_options(),
+    use_xss_protection()
   )
 }
