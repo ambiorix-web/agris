@@ -4,7 +4,7 @@
 \alias{use_hide_powered_by}
 \title{Powered By}
 \usage{
-use_hide_powered_by(value = NULL)
+use_hide_powered_by(value = NA)
 }
 \arguments{
 \item{value}{Value to set the header to.}

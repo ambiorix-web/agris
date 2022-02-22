@@ -4,6 +4,8 @@
 #' Controls how much referrer information (sent with the Referer header)
 #' should be included with requests.
 #' 
+#' @param policy Policy to set.
+#' 
 #' @export 
 use_referrer_policy <- function(
   policy = c(
